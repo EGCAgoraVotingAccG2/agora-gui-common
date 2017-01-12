@@ -13,11 +13,21 @@
                 </ul>
                 <!-- social links -->
                 <div class="social">
-                    <a href="{{social.facebook}}" ng-if="!!social.facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
-                    <a href="{{social.twitter}}" ng-if="!!social.twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
-                    <a href="{{social.googleplus}}" ng-if="!!social.googleplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
-                    <a href="{{social.youtube}}" ng-if="!!social.youtube"><i class="fa fa-fw fa-lg fa-youtube-play"></i></a>
-                    <a href="{{social.github}}" ng-if="!!social.github"><i class="fa fa-fw fa-lg fa-github"></i></a>
+			<div id="facebookDesc" hidden>Facebook</div>
+			<div id="twitterDesc" hidden>Twitter</div>
+			<div id="googlePlusDesc" hidden>Google Plus</div>
+			<div id="youtubeDesc" hidden>Youtube</div>
+			<div id="githubDesc" hidden>Github</div>
+                    <a href="{{social.facebook}}" ng-if="!!social.facebook" 
+			role="link" aria-describedby="facebookDesc"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
+                    <a href="{{social.twitter}}" ng-if="!!social.twitter"
+			role="link" aria-describedby="twitterDesc"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
+                    <a href="{{social.googleplus}}" ng-if="!!social.googleplus"
+			role="link" aria-describedby="googlePlusDesc"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
+                    <a href="{{social.youtube}}" ng-if="!!social.youtube"
+			role="link" aria-describedby="youtubeDesc"><i class="fa fa-fw fa-lg fa-youtube-play"></i></a>
+                    <a href="{{social.github}}" ng-if="!!social.github"
+			role="link" aria-describedby="githubDesc"><i class="fa fa-fw fa-lg fa-github"></i></a>
                 </div>
             </div>
 
