@@ -30,7 +30,10 @@
                   avRegistration.fillValidFormText
                 </span>
               </div>
+		<label id="registerButtonLabel" hidden ng-i18next="avRegistration.registerButton"></label>
+		<div id="registerButtonDesc" hidden>Pulse aquí para registrarse en el sistema</div>
               <button
+		role="button" aria-labelledby="registerButtonLabel" aria-describedby="registerButtonDesc"
                 type="submit"
                 class="btn btn-block btn-success"
                 ng-i18next="avRegistration.registerButton"
